@@ -1,0 +1,34 @@
+
+import './App.css'; 
+
+function App() {
+  const nayoks=['Ali Reaz','jafor','Rocky','Shourav']
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>I am a React Person</p>
+        <Person name="Tanvir Ahmed" name2="Yo yo honey"></Person>
+        <Person name="Sadiqul Islam" name2="Holy shit"></Person>
+        <Person name="Naimur Rahman" name2="fuck step mom"></Person>
+        <Person name="Rasel antor" name2="fuck your step sis"></Person>
+      </header>
+    </div>
+  );
+
+    }
+
+function Person(props) {
+  const PersonStyle={
+    border:'2px solid red',
+    margin:'10px'
+  }
+
+  return(
+    <div>
+    <h1 style={PersonStyle}>Name={props.name} </h1>
+    <h3 style={PersonStyle}>Can you please {props.name2}</h3>
+    </div>
+  )
+}
+
+export default App; 
