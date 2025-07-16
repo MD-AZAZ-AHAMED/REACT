@@ -12,9 +12,8 @@ function App() {
       <header className="App-header">
         <p>I am a React Person</p> 
         <Product product={products[0]} price={products[0].price} />
-        <Person name="Sadiqul Islam" name2="Nice person" />
-        <Person name="Naimur Rahman" name2="Smart thinker" />
-        <Person name="Rasel Antor" name2="Creative friend" />
+        <Product product={products[1]} price={products[1].price} />
+        
       </header>
     </div>
   );
