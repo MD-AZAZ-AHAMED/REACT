@@ -1,0 +1,58 @@
+import './App.css'; 
+
+function App() {
+  const products = [
+    { name: 'Photoshop', price: '$90.99' },
+    { name: 'Illustrator', price: '$60.99' },
+    { name: 'PDF Reader', price: '$6.99' }
+  ];
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>I am a React Person</p> 
+        <Product product={products[0]} price={products[0].price} />
+        <Person name="Sadiqul Islam" name2="Nice person" />
+        <Person name="Naimur Rahman" name2="Smart thinker" />
+        <Person name="Rasel Antor" name2="Creative friend" />
+      </header>
+    </div>
+  );
+}
+
+function Product(props) {
+  const productStyle = {
+    border: '1px solid gray',
+    borderRadius: '5px',
+    backgroundColor: 'lightgray',
+    height: '200px',
+    width: '200px',
+    float: 'left',
+    padding: '10px',
+    margin: '10px'
+  };
+
+  const { name, price } = props.product;
+
+  return (
+    <div style={productStyle}>
+      <h3>{props.name}</h3>
+      <h5>{props.price}</h5> 
+      <button>Buy Now</button>
+    </div>
+  );
+}
+
+function Person(props) {
+  return (
+    <div style={{ border: '2px solid blue',
+             margin: '10px', 
+             padding: '10px' }}>
+              
+      <h3>Name: {props.name}</h3>
+      <p>Info: {props.name2}</p>
+    </div>
+  );
+}
+
+export default App;
