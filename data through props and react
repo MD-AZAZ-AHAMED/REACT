@@ -5,10 +5,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+ 
         <Nayok name={nayoks[1]} age={20}></Nayok>
         <Nayok name={nayoks[3]}></Nayok>
-      </header>
+      
     </div>
   );
 }
